@@ -19,4 +19,3 @@ python files were used
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
 https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.drop.html
 https://www.w3schools.com/python/numpy/default.asp
-youtube.com
