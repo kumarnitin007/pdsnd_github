@@ -88,7 +88,6 @@ def get_filters():
         if filter=='month' or filter=='m':
             print('Which month\'s data to look at?')
             month = input('January/jan, February/feb, March/mar, April/apr, May, June/jun- ').lower()
-            print()
             if month not in MONTH_DATA:
                 print('Invalid input. Could you try again?')
                 wrong_count_month += 1
@@ -98,7 +97,6 @@ def get_filters():
         elif filter=='day' or filter=='d':
             print('Which day\'s data to look at? ')
             day = input('Monday/mon, Tuesday/tues, Wednesday/wed, Thursday/thur, Friday/fri, Saturday/sat, Sunday/sun- ').lower()
-            print()
             if day not in WEEK_DATA:
                 print('Invalid input. Could you try again?')
                 wrong_count_day += 1
@@ -115,7 +113,6 @@ def get_filters():
             month = MONTH_DATA[month]
             print('And day of the week?')
             day = input('Monday/mon, Tuesday/tues/tue, Wednesday/wed, Thursday/thur/thu, Friday/fri, Saturday/sat, Sunday/sun- ').lower()
-            print()
             if day not in WEEK_DATA:
                 print('Invalid input. Could you try again?')
                 wrong_count_day += 1
@@ -286,7 +283,6 @@ def display_data(df):
         while 1:
             for i in range(5):
                 print(df.iloc[display_counter])
-                print()
                 display_counter+=1
             choice = input('Display next five? Yes/No ').lower()
             if choice=='yes' or choice=='y' or choice=='yus':
@@ -309,7 +305,6 @@ def main():
         display_data(df)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n').lower()
-        print()
         if restart != 'yes' and restart != 'y' and restart != 'yus':
             break
 
