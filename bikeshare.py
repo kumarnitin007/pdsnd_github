@@ -125,6 +125,7 @@ def get_filters():
             print('Invalid input. Could you try again?')
             continue
         break
+    #Checkout the fun message for total attempts made to enter data
     print(f'City Attempts = {wrong_count_city+1}, Month Attempts = {wrong_count_month+1}, Day Attempts = {wrong_count_day+1}***********************')
     print('-'*40)
     return city, month, day
@@ -308,6 +309,7 @@ def main():
         user_stats(df)
         display_data(df)
 
+        #this will retrigger the full code again if yes
         restart = input('\nWould you like to restart? Enter yes or no.\n').lower()
         print()
         if restart != 'yes' and restart != 'y' and restart != 'yus':
